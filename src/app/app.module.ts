@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {DataTablesModule} from 'angular-datatables';
 import { DttestComponent } from './dttest/dttest.component';
+import { FotosComponent } from './fotos/fotos.component';
+import {NgxImageZoomModule} from "ngx-image-zoom";
+import {ImageZoomModule} from "angular2-image-zoom";
 
 @NgModule({
   declarations: [
     AppComponent,
-    DttestComponent
+    DttestComponent,
+    FotosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DataTablesModule
+    DataTablesModule,
+    NgxImageZoomModule.forRoot(),
+    ImageZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]

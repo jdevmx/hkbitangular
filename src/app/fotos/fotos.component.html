@@ -1,0 +1,24 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary" id="btn1" (click)="btn1click()">
+        prueba
+      </button>
+
+    </div>
+
+    <div class="col-md-6">
+      <div style="margin-top: 20px">
+        <ngx-image-zoom
+          [thumbImage]="'assets/img/300px_DSC_0023 copia.png'"
+          [fullImage]="'http://www.finally-40.com/wp-content/uploads/2018/02/DSC_0023.png'"
+        ></ngx-image-zoom>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img [imageZoom]="zoomedImageSrc" [src]="'http://www.finally-40.com/wp-content/uploads/2018/02/DSC_0023.png'" [style.width.px]="300" [style.height.px]="300">
+
+    </div>
+  </div>
+</div>
