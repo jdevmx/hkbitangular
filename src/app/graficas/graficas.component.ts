@@ -107,7 +107,7 @@ export class GraficasComponent implements OnInit {
     },
     {
       backgroundColor: 'rgba(185,68,17,1)',
-      borderColor: 'rgba(89,185,17,.5)',
+      borderColor: 'rgba(185,68,17,.5)',
     }
 
   ];
