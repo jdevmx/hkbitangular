@@ -9,13 +9,17 @@ import { FotosComponent } from './fotos/fotos.component';
 import {ImageZoomModule} from "angular2-image-zoom";
 import { GraficasComponent } from './graficas/graficas.component';
 import {ChartsModule} from "ng2-charts";
+import { ReporteComponent } from './reporte/reporte.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DttestComponent,
     FotosComponent,
-    GraficasComponent
+    GraficasComponent,
+    ReporteComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,

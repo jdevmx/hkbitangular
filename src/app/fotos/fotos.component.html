@@ -1,20 +1,22 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <button class="btn btn-primary" id="btn1" (click)="btn1click()">
-        prueba
-      </button>
 
-    </div>
 
-    <div class="col-md-12" align="center">
+    <div class="col-md-12" align="center" style="margin-bottom: 10px;">
       <img [imageZoom]="zoomedImageSrc"
-           [src]="'http://www.finally-40.com/wp-content/uploads/2018/02/DSC_0023.png'"
-           [style.width.px]="400" [style.height.px]="400"
+           [src]="'/assets/img/paisaje_en_la_sierra.jpg'"
+           [style.width.px]="500" [style.height.px]="400"
            [lensStyle]="'LENS'"
            [lensBorder]="'1'"
       >
+
+    </div>
+
+    <div class="col-md-12" style="margin-bottom: 20px;">
+      <button class="btn btn-primary" id="btn1" (click)="btn1click()">
+        Ejemplo de un alert
+      </button>
 
     </div>
   </div>

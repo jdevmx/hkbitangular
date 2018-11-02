@@ -1,10 +1,56 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="150" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container margen">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="d-flex flex-row">
+        <div>
+          <img width="100" alt="Angular Logo"
+               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+        </div>
+        <div class="center-man">
+          <h1>Welcome to {{ title }}!</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 18px">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="http://www.mandarinasoft.com.mx/" target="_blank">Mandarinasoft</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" [routerLink]="['/']">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/dttest']">Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/fotos']">Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/graficas']">Grafica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/reporte']">Reporte</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--<div class="col-md-12 d-flex flex-row" align="center">
+      <button class="btn btn-success" style="margin-right: 10px" (click)="home()"> Inicio</button>
+      <button class="btn btn-primary" style="margin-right: 10px" (click)="table()">Table</button>
+      <button class="btn btn-danger" style="margin-right: 10px" (click)="foto()">Fotos</button>
+      <button class="btn btn-dark" style="margin-right: 10px" (click)="grafica()">Graficas</button>
+      <button class="btn btn-info" style="margin-right: 10px" (click)="reporte()"> Reporte</button>
+    </div>
+  </div>-->
 </div>
-<h2></h2>
+
 
 <router-outlet></router-outlet>

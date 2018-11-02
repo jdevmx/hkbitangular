@@ -1,0 +1,16 @@
+.margen{
+  margin-bottom: 20px;
+}
+
+.center-man{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-man h1{
+  margin-left: 10px;
+}

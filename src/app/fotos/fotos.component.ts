@@ -16,6 +16,8 @@ import * as $ from 'jquery';
 })
 export class FotosComponent implements OnInit {
 
+  urlimg = '';
+
   constructor() { }
 
   ngOnInit() {
@@ -28,6 +30,10 @@ export class FotosComponent implements OnInit {
 
   btn1click(){
     alert("te hiciste pis desde angular");
+  }
+
+  urlimagen(){
+      this.urlimg = '/assets/img/paisaje_en_la_sierra.jpg';
   }
 
 }
