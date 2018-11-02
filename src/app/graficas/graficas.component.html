@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="margin-top: 10px; margin-bottom: 15px;" align="center"> Grafica de Pruebas </h1>
+    </div>
+    <div class="col-md-12">
+      <div>
+        <div style="display: block" style="margin-bottom: 100px">
+          <canvas baseChart
+                  [datasets]="barChartData"
+                  [labels]="labels"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType"
+                  [colors]="lineChartColors"
+                  [options]="barChartOptions"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
