@@ -14,3 +14,17 @@
 .center-man h1{
   margin-left: 10px;
 }
+
+.li-hover:hover{
+  color: orange;
+}
+
+.li-hover ul li:hover{
+  background-color: rgba(295,195,0,.45);
+  border-radius: 10px;
+}
+
+.li-hover ul li a:hover{
+  color: red;
+  font-weight: bold;
+}
